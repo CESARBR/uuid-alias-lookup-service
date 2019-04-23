@@ -4,9 +4,9 @@ Datastore = require 'meshblu-core-datastore'
 http = require 'http'
 
 class AliasService
-  constructor: ({mongoDbUri}) ->
+  constructor: ({mongoDbUri, mongoDbOptions}) ->
     @datastore = new Datastore
-      database: mongojs mongoDbUri
+      database: mongojs mongoDbUri, null, mongoDbOptions
       collection: 'aliases'
 
   find: ({name}, callback) =>

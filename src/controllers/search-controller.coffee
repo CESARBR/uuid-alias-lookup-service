@@ -4,10 +4,10 @@ SubAliasService = require '../services/sub-alias-service'
 ReverseLookupService = require '../services/reverse-lookup-service'
 
 class AliasController
-  constructor: ({mongoDbUri}) ->
-    @aliasService = new AliasService {mongoDbUri}
-    @subAliasService = new SubAliasService {mongoDbUri}
-    @reverseLookupService = new ReverseLookupService {mongoDbUri}
+  constructor: ({mongoDbUri, mongoDbOptions}) ->
+    @aliasService = new AliasService {mongoDbUri, mongoDbOptions}
+    @subAliasService = new SubAliasService {mongoDbUri, mongoDbOptions}
+    @reverseLookupService = new ReverseLookupService {mongoDbUri, mongoDbOptions}
 
   find: (req, res) =>
     {name} = req.query
