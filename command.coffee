@@ -9,6 +9,8 @@ class Command
       port:           process.env.PORT || 80
       disableLogging: process.env.DISABLE_LOGGING == "true"
       mongoDbUri: process.env.MONGODB_URI || 'mongodb://127.0.0.1/uuid-alias-service'
+      mongoDbOptions:
+        reconnectTries: process.env.MONGODB_RECONNECT_TRIES || Number.MAX_VALUE
 
   panic: (error) =>
     console.error error.stack
