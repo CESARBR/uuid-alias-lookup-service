@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e573e9c_eba6b7d0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1015148
+      },
+      "writtenOn": "2019-04-25T14:38:45Z",
+      "side": 1,
+      "message": "Explain the reason for adding the option.\nIt\u0027s possible that in the future we (or someone else) do not know/remember that we did this to try and fix the topology error, I feel it\u0027s good to have this pointed out.\nWhat do you think?",
+      "revId": "705110bccc5fd3825568abaa09b6932e70b0a2f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
